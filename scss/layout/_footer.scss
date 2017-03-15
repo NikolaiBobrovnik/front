@@ -1,0 +1,40 @@
+.footer {
+  position: relative;
+  margin-top: -100px;
+  height: 100px;
+  background: #212223;
+  &__nav {
+
+  }
+  &__list {
+    list-style: none;
+    width: 490px;
+    margin: 0 auto;
+    padding-top: 45px;
+
+  }
+  &__item {
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    &:last-child::after {
+      display: none;
+    }
+    &::after {
+      content: '';
+      width: 2px;
+      height: 12px;
+      background: rgba(255, 255, 255,.7);
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: -18px;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(255, 255, 255,.7);
+  }
+}
